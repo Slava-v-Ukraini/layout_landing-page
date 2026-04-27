@@ -1,5 +1,5 @@
 .page {
-  font-family: Space Grotesk;
+  font-family: "Space Grotesk", sans-serif;
   color: $main-color;
   line-height: 140%;
   font-size: 16px;
@@ -20,7 +20,7 @@
     opacity: 0;
     transform: translateX(-100%);
     pointer-events: none;
-    
+
     &:target {
       opacity: 1;
       transform: translateX(0);
