@@ -1,0 +1,40 @@
+.header {
+  display: none;
+  &__content {
+    box-sizing: border-box;
+    background-image: url(../images/header.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom {
+    padding-bottom: 40px;
+    @include contentPaddingInline;
+    @include onTablet {
+      padding-bottom: 64px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+
+    @include onTablet {
+      font-size: 48px;
+    }
+  }
+}

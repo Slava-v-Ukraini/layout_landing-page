@@ -1,0 +1,39 @@
+.menu {
+  box-sizing: border-box;
+
+  height: 100vh;
+  background-color: #e5e6e8;
+  font-weight: 700;
+  text-transform: capitalize;
+  &__top {
+    margin-bottom: 32px;
+
+    @include onTablet {
+      margin-bottom: 56px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 48px;
+  }
+
+  &__content {
+    @include contentPaddingInline;
+  }
+
+  &__call {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+  }
+
+  &__call-to-order {
+    padding-bottom: 4px;
+    border-bottom: 1px solid $main-color;
+    width: fit-content;
+    margin-top: 16px;
+  }
+}
