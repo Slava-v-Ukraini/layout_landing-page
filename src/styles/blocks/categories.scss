@@ -4,14 +4,14 @@
     row-gap: 40px;
 
     @include on-tablet {
-      row-gap: 64px;
+      row-gap: 56px;
     }
   }
 }
 
 .category {
   &__photos {
-    // @include page-grid;
+    @include page-grid;
     margin-bottom: 16px;
   }
   
@@ -34,6 +34,7 @@
       @include on-tablet {
         grid-column: span 2;
       }
+      
       @include on-desktop {
         grid-column: span 4;
       }
@@ -47,7 +48,7 @@
     object-fit: cover;
   }
 
-  &_title {
+  &__title {
     margin: 0;
     font-weight: 700;
     font-size: 24px;

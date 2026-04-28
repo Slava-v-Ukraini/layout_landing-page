@@ -1,8 +1,8 @@
 .top-bar {
   padding-block: 24px;
-  
+  width: 100%;
   @include content-padding-inline;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +30,7 @@
     @include on-tablet {
       height: 24px;
     }
-    
+
     @include hover(transform, scale(1.2));
   }
 }
