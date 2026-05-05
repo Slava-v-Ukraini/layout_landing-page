@@ -2,6 +2,7 @@
   @include page-grid;
   &__title {
     grid-column: 1 / -1;
+    margin-bottom: 24px;
 
     @include on-tablet {
       grid-column: 1 / 4;
@@ -26,7 +27,8 @@
 
   &__description {
     font-family:
-      Space Mono,
+      "Space Mono",
       sans-serif;
+      margin: 0;
   }
 }

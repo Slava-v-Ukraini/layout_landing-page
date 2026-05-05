@@ -1,6 +1,8 @@
 .top-bar {
+  box-sizing: border-box;
   padding-block: 24px;
   width: 100%;
+  
   @include content-padding-inline;
 
   display: flex;
@@ -8,7 +10,12 @@
   align-items: center;
 
   @include on-tablet {
+    box-sizing: unset;
     padding-block: 32px;
+  }
+
+  @include on-desktop {
+    box-sizing: unset;
   }
 
   &__icons {

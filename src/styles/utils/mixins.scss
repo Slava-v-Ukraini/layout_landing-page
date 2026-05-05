@@ -15,6 +15,7 @@
 
   @include on-tablet {
     padding-inline: 72px;
+    margin-inline: auto;
     max-width: 600px;
   }
 
@@ -34,12 +35,14 @@
 
 @mixin page-grid {
   --columns: 2;
+
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 
   @include on-tablet {
     column-gap: 24px;
+
     --columns: 6;
   }
 

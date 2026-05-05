@@ -1,14 +1,35 @@
 .main {
   &__content {
     display: grid;
-    row-gap: 64px;
+    row-gap: 96px;
     padding-block: 64px;
 
     @include content-padding-inline;
-
+    
     @include on-tablet {
       row-gap: 120px;
       padding-block: 120px;
+    }
+  }
+
+  &__separator {
+    box-sizing: border-box;
+    position: relative;
+    height: 200px;
+    background: url(../images/semi-footer.png) center / cover no-repeat;
+
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+
+    @include on-tablet {
+      height: 400px;
+    }
+
+    @include on-desktop {
+      height: 460px;
     }
   }
 }
