@@ -12,6 +12,7 @@
     &--wrapper {
       @include page-grid;
     }
+    
     grid-column: 1 / -1;
     justify-content: center;
     margin-top: 40px;
@@ -41,7 +42,7 @@
 
     &:active {
       color: #fff;
-      background-color: #111111;
+      background-color: #111;
     }
   }
 }
