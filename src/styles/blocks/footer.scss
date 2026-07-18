@@ -1,0 +1,19 @@
+.footer {
+  box-sizing: border-box;
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+
+  padding-block: 16px;
+  background-color: $color-bg-light;
+  text-align: center;
+
+  @include content-padding-inline;
+
+  &__disclaimer {
+    margin: 0;
+    font-family: $font-mono;
+    font-size: 12px;
+    color: #9393a3;
+  }
+}

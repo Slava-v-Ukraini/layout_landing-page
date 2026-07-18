@@ -57,7 +57,7 @@
           </a>
           <div class="top-bar__icons">
             <a
-              href="#"
+              href="tel:+1 234 5555-55-55"
               class="icon icon--phone"
             ></a>
             <a
@@ -112,7 +112,7 @@
             </li>
             <li class="nav__item nav__list__item">
               <a
-                href="#store"
+                href="#"
                 class="nav__link"
               >
                 Store
@@ -120,7 +120,7 @@
             </li>
             <li class="nav__item nav__list__item">
               <a
-                href="#login"
+                href="#"
                 class="nav__link"
               >
                 Login
@@ -128,7 +128,7 @@
             </li>
             <li class="nav__item nav__list__item">
               <a
-                href="#cart"
+                href="#"
                 class="nav__link"
               >
                 Cart(0)
@@ -164,11 +164,16 @@
 
             <div class="recommended__products">
               <article class="product recommended__product">
-                <img
-                  src="./images/recommended1.png"
-                  alt="Nothing Phone"
-                  class="product__photo"
-                />
+                <a
+                  href="#"
+                  class="product__photo-link"
+                >
+                  <img
+                    src="./images/recommended1.png"
+                    alt="Nothing Phone"
+                    class="product__photo"
+                  />
+                </a>
                 <h3 class="product__title">Phone(1)</h3>
                 <p class="product__description">
                   Designed with instinct, to bring joy back to the everyday.
@@ -179,11 +184,16 @@
               </article>
 
               <article class="product recommended__product">
-                <img
-                  src="./images/recommended2.png"
-                  alt="Nothing EarBuds in transpearent case"
-                  class="product__photo"
-                />
+                <a
+                  href="#"
+                  class="product__photo-link"
+                >
+                  <img
+                    src="./images/recommended2.png"
+                    alt="Nothing EarBuds in transpearent case"
+                    class="product__photo"
+                  />
+                </a>
                 <h3 class="product__title">Ear(2)</h3>
                 <p class="product__description">
                   Perfecting the path from artist to ear. So that music sounds
@@ -193,11 +203,16 @@
               </article>
 
               <article class="product recommended__product">
-                <img
-                  src="./images/recommended3.png"
-                  alt="Nothing EarBuds in transpearent elongated case "
-                  class="product__photo"
-                />
+                <a
+                  href="#"
+                  class="product__photo-link"
+                >
+                  <img
+                    src="./images/recommended3.png"
+                    alt="Nothing EarBuds in transpearent elongated case "
+                    class="product__photo"
+                  />
+                </a>
                 <h3 class="product__title">Ear(stick)</h3>
                 <p class="product__description">
                   Tech you can’t feel. Leaving just space for sound to come to
@@ -298,25 +313,19 @@
                 <h3 class="category__title">Accessories</h3>
               </article>
             </div>
-            
+
             <div class="categories__button--wrapper">
               <button class="categories__button">View all</button>
             </div>
-
-
           </section>
-          
+
           <div class="main__separator"></div>
 
           <section
             class="about-us"
             id="about-us"
           >
-            <h2
-              class="about-us__title section-title section-title--align--left"
-            >
-              About us
-            </h2>
+            <h2 class="about-us__title section-title">About us</h2>
 
             <div class="about-us__content">
               <p class="about-us__description">
@@ -341,13 +350,77 @@
             id="contact-us"
           >
             <h2 class="contact-us__title section-title">Contact us</h2>
+            <form
+              class="contact-us__fields"
+              onsubmit="this.reset(); return false;"
+            >
+              <input
+                type="text"
+                class="contact-us__field"
+                placeholder="e.g. John Doe"
+                required
+              />
+              <input
+                type="email"
+                class="contact-us__field"
+                placeholder="e.g. john.doe@example.com"
+                required
+              />
+              <textarea
+                class="contact-us__field contact-us__field--message"
+                placeholder="e.g. I'd like to ask about..."
+                required
+              ></textarea>
 
-            
+              <button
+                type="submit"
+                class="contact-us__button"
+              >
+                Send
+              </button>
+            </form>
+
+            <div class="contact-us__infos">
+              <div class="contact-us__info-group contact-us__info-group--phone">
+                <p class="contact-us__info contact-us__info--title">Phone</p>
+                <a
+                  href="tel:+1 234 5555-55-55"
+                  class="contact-us__info contact-us__info--link"
+                >
+                  +1 234 5555-55-55
+                </a>
+              </div>
+              <div class="contact-us__info-group contact-us__info-group--email">
+                <p class="contact-us__info contact-us__info--title">Email</p>
+                <a
+                  href="mailto:hello@nothing.com"
+                  class="contact-us__info contact-us__info--link"
+                >
+                  hello@nothing.com
+                </a>
+              </div>
+              <div class="contact-us__info-group contact-us__info-group--address">
+                <p class="contact-us__info contact-us__info--title">Address</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=400+first+ave.+suite+700+Minneapolis+MN+55401"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contact-us__info contact-us__info--link"
+                >
+                  400 first ave.<br> suite 700<br>Minneapolis, MN 55401
+                </a>
+              </div>
+            </div>
           </section>
         </div>
       </div>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p class="footer__disclaimer">
+        This is a non-commercial learning project. Not an official Nothing
+        website.
+      </p>
+    </footer>
   </body>
 </html>

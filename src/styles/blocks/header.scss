@@ -12,26 +12,19 @@
   }
 
   &__bottom {
-    box-sizing: border-box;
+    @include full-bleed-bar;
+
     padding-bottom: 40px;
-    width: 100%;
     text-align: left;
 
-    @include content-padding-inline;
-
     @include on-tablet {
-      box-sizing: unset;
       padding-bottom: 64px;
-    }
-
-    @include on-desktop {
-      box-sizing: unset;
     }
   }
 
   &__title {
     margin: 0;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: $font-heading;
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;

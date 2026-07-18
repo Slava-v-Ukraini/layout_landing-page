@@ -5,7 +5,7 @@
     padding-block: 64px;
 
     @include content-padding-inline;
-    
+
     @include on-tablet {
       row-gap: 120px;
       padding-block: 120px;

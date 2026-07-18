@@ -33,6 +33,29 @@
   }
 }
 
+@mixin full-bleed-bar {
+  box-sizing: border-box;
+  width: 100%;
+
+  @include content-padding-inline;
+
+  @include on-tablet {
+    box-sizing: unset;
+  }
+
+  @include on-desktop {
+    box-sizing: unset;
+  }
+}
+
+@mixin grid-span-desktop($span) {
+  grid-column: 1 / -1;
+
+  @include on-desktop {
+    grid-column: span $span;
+  }
+}
+
 @mixin page-grid {
   --columns: 2;
 
@@ -48,5 +71,28 @@
 
   @include on-desktop {
     --columns: 12;
+  }
+}
+
+@mixin cta-button {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-color: $main-color;
+  color: $color-white;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 27px;
+
+  @include hover(all, null);
+
+  &:hover {
+    background-color: $color-bg-light;
+    color: $main-color;
+    border: 2px solid $color-border-light;
+  }
+
+  &:active {
+    color: $color-white;
+    background-color: $color-dark;
   }
 }
